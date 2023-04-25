@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eventos 03</title>
+</head>
+
+<body>
+    <script>
+    addEventListener('DOMContentLoaded',inicio);
+    function inicio(){
+        document.getElementById('recuadro1').addEventListener('click',presion1);
+        document.getElementById('recuadro2').addEventListener('dblclick',presion2);
+        }
+        
+    function presion1(){
+        alert('se hizo click');
+        }
+        
+    function presion2(){
+        alert('se hizo doble click');
+    }
+    </script>
+    
+    <div style="width:200px;height:200px;background:#FFE7C1" id="recuadro1">
+     Probando el evento de click
+    
+    </div>
+    <div style="width:200px;height:200px;background:#F8DF0C" id="recuadro2">
+     Probando el evento de doble click
+    
+    </div>
+    
+    
+</body>
+</html>

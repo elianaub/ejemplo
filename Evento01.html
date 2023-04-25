@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Registro en formulario</title>
+    <script>
+    function saludo(){
+        let nom_usuario=document.fdatos.entrada.value
+        document.writeln("Hola, buenos días: "+nom_usuario)
+    }
+    
+    </script>
+</head>
+
+<body>
+    <form name="fdatos">
+    Escribe tu nombre:<input type="text" size="20" name="entrada">
+        
+    <input type="button" value="Pulsa aquí" onClick="saludo()">
+    </form>
+</body>
+</html>
